@@ -2,4 +2,4 @@
 configuring each ubuntu/xenial box
 
 Gunicorns:
-wget https://raw.githubusercontent.com/jamangi/AppServer/master/gunicorn.sh && chmod u+x gunicorn.sh && ./gunicorn.sh
+wget --no-cache -O gunicorn.sh https://raw.githubusercontent.com/jamangi/AppServer/master/gunicorn.sh && chmod u+x gunicorn.sh && ./gunicorn.sh
