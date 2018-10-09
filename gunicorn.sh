@@ -1,7 +1,6 @@
-sudo -s
-apt-get update -y
-apt-get install python3-pip python3-dev nginx -y
-pip3 install virtualenv
+sudo apt-get update -y
+sudo apt-get install python3-pip python3-dev nginx -y
+sudo pip3 install virtualenv
 mkdir ~/myproject
 cd ~/myproject
 wget https://raw.githubusercontent.com/jamangi/AppServer/master/myproject.py
