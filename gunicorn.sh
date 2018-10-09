@@ -5,7 +5,15 @@ mkdir ~/myproject
 cd ~/myproject
 wget --no-cache -O myproject.py https://raw.githubusercontent.com/jamangi/AppServer/master/myproject.py
 
-#virtualenv myprojectenv
-#source myprojectenv/bin/activate
+# virtualenv myprojectenv
+# source myprojectenv/bin/activate
 sudo pip3 install gunicorn flask
-sudo python3 myproject.py
+# sudo python3 myproject.py
+# gunicorn --bind 0.0.0.0:5000 myproject:app
+
+sudo wget --no-cache -O /etc/systemd/system/myproject.service https://raw.githubusercontent.com/jamangi/AppServer/master/myproject.service
+sudo systemctl start myproject
+sudo systemctl enable myproject
+
+sudo wget --no-cache -O /etc/nginx/sites-available/myproject.ngx https://raw.githubusercontent.com/jamangi/AppServer/master/myproject.ngx
+sudo ln -s /etc/nginx/sites-available/myproject.ngx /etc/nginx/sites-enabled
