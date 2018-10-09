@@ -17,3 +17,5 @@ sudo systemctl enable myproject
 
 sudo wget --no-cache -O /etc/nginx/sites-available/myproject.ngx https://raw.githubusercontent.com/jamangi/AppServer/master/myproject.ngx
 sudo ln -s /etc/nginx/sites-available/myproject.ngx /etc/nginx/sites-enabled
+
+sudo systemctl restart nginx
