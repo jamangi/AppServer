@@ -64,22 +64,22 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get update -y
-    sudo apt-get install python3-pip python3-dev nginx -y
-    sudo pip3 install virtualenv
-    mkdir ~/myproject
-    cd ~/myproject
-    mv ~/myproject.py .
-    virtualenv myprojectenv
-    source myprojectenv/bin/activate
+  # config.vm.provision "shell", inline: <<-SHELL
+  #   sudo -s
+  #   sudo apt-get update -y
+  #   sudo apt-get install python3-pip python3-dev nginx -y
+  #   sudo pip3 install virtualenv
+  #   mkdir ~/myproject
+  #   cd ~/myproject
+  #   wget https://raw.githubusercontent.com/jamangi/AppServer/master/myproject.py
+  #   virtualenv myprojectenv
+  #   source myprojectenv/bin/activate
 
-    pip install gunicorn flask
-    sudo ufw allow 9393
-    python myproject.py
-
-
+  #   pip install gunicorn flask
+  #   sudo ufw allow 8080
 
 
-  SHELL
+
+
+  # SHELL
 end
