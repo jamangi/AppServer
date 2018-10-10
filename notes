@@ -16,3 +16,7 @@ debugging
 sudo vim /var/log/syslog  (for errors)
 
 systemctl daemon-reload   (after changing system unit file)
+
+sudo systemctl restart nginx (after changing nginx)
+
+# check sites-enabled soft links
