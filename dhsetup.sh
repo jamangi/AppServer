@@ -11,7 +11,7 @@ sudo git pull origin master
 
 # wget --no-cache -O myproject.py https://raw.githubusercontent.com/jamangi/AppServer/master/myproject.py
 wget --no-cache -O docker.sh https://raw.githubusercontent.com/jamangi/AppServer/master/docker.sh && chmod u+x docker.sh && ./docker.sh
-sudo chown -R vagrant *
+sudo chown -R $(whoami) *
 
 # virtualenv myprojectenv
 # source myprojectenv/bin/activate
