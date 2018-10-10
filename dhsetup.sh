@@ -1,3 +1,4 @@
+#wget --no-cache -O dhsetup.sh https://raw.githubusercontent.com/jamangi/AppServer/master/dhsetup.sh && chmod u+x dhsetup.sh && ./dhsetup.sh
 sudo apt-get update -y
 sudo apt-get install python3-pip python3-dev nginx -y
 #sudo pip3 install virtualenv
@@ -10,9 +11,11 @@ sudo git pull origin master
 
 # wget --no-cache -O myproject.py https://raw.githubusercontent.com/jamangi/AppServer/master/myproject.py
 wget --no-cache -O docker.sh https://raw.githubusercontent.com/jamangi/AppServer/master/docker.sh && chmod u+x docker.sh && ./docker.sh
+sudo chown -R vagrant *
+
 # virtualenv myprojectenv
 # source myprojectenv/bin/activate
-sudo pip3 install gunicorn flask
+sudo pip3 install gunicorn flask flask_cors docker
 # sudo python3 myproject.py
 #gunicorn --bind 0.0.0.0:5000 myproject:app
 

@@ -13,3 +13,10 @@ sudo add-apt-repository \
 sudo apt-get update -y
 sudo apt-get install docker-ce -y
 sudo docker run hello-world
+sudo docker pull rubyshadows/heartbeat:v1
+
+sudo groupadd docker
+sudo usermod -aG docker $(whoami)
+sudo service docker restart
+
+#restart vm
