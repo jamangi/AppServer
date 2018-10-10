@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name default;
+    server_name dhv3.pw www.dhv3.pw dockerhearts.online www.dockerhearts.online;
 
     location / {
         include proxy_params;
