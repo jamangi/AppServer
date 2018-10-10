@@ -1,0 +1,10 @@
+# AppServer
+Automating installation of app server with SSL using bash
+
+
+
+user vagrant pub: 
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDUwGTk+xzHmU7Nzgeg5xClYXJk+oMJfDnnzCYcES+AzjbbOADvFOGMQ6sKvZdjFaZogksYnrToDCJVjLkffKzBO39Pk2rybBMiZp2BGTqDA7oHQuTryuYB/Nva8bUau/gZB5CFwvlJLVzBWM2skxARM3YRFmC3FYLQluOtsqp9VH+3v3wM2dZrqu4aOc1TYPs+EoWPHpHXSIgwjtUa9AVxQUIN/RiR8IocVALCJnYaAQPV47F/ZqVE7muaxpbb4bSRhJmc0WClJIDBweLu47Lj+zCYCtjSH123yanIrKoBw7bxj3NkzxnoTLTx4OlUyK5igrvWYSjWyFSfIWSCTDIL vagrant@ubuntu-xenial
+
+ssh root@178.128.180.44
