@@ -15,7 +15,7 @@ sudo chown -R $(whoami) *
 
 # virtualenv myprojectenv
 # source myprojectenv/bin/activate
-sudo pip3 install gunicorn flask flask_cors docker
+sudo pip3 install gunicorn flask flask_cors flask-socketio docker
 # sudo python3 myproject.py
 #gunicorn --bind 0.0.0.0:5000 myproject:app
 

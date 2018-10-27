@@ -19,4 +19,5 @@ sudo groupadd docker
 sudo usermod -aG docker $(whoami)
 sudo service docker restart
 
+# sudo docker login --username="" --password=""
 #restart vm
